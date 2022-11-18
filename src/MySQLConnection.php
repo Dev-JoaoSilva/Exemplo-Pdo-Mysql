@@ -2,7 +2,7 @@
 namespace ExemploPDOMySQL;
 
 class MySQLConnection extends \PDO {
-    public function _construct() {
-        parent::_construct('myql:host=localhost;dbname=biblioteca', 'root', '');
+    public function __construct() {
+        parent::__construct('myql:host=localhost;dbname=biblioteca', 'root', '');
     }
 }
